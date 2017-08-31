@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
 })
 export class TutorialComponent {
 	public name = 'GEM';
+	public input = 'Angular 2xx';
 }
