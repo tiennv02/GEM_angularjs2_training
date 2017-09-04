@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'my-tutorial',
@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./tutorial.component.css']
 })
 export class TutorialComponent {
-
-	public apply = true;
+	
 }
