@@ -1,0 +1,13 @@
+<h1>Demo pagination optional parameter</h1>
+
+<div class="pagination">
+    <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+    </a>
+    <a *ngFor="let page of pages" [routerLink]="" [queryParams]="{page:page}">{{page}}</a>
+
+    <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+    </a>
+
+</div>

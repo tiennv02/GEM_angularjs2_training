@@ -1,0 +1,14 @@
+<form class="body" #f="ngForm" (ngSubmit)="Saveform()">
+    <h1 class="text-center">Chỉnh sửa thông tin cá nhân</h1>
+    <div>
+        <input class="inp-text" type="text" [(ngModel)] = "user.name" name="name" placeholder="last name">
+    </div>
+    <div >
+        <input class="inp-text" type="text" [(ngModel)] = "user.age" name="age" placeholder="age">
+    </div>
+    <div >
+        <textarea class="inp-text" [(ngModel)] = "user.address" name="address" placeholder="address"></textarea>
+    </div>
+    <button type="submit">Save</button>
+    <button type="button" (click)="Gotouser()">Cancel</button>
+</form>

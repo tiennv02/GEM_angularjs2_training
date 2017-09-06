@@ -1,0 +1,19 @@
+<a [routerLink]="['adduser']">Add new user</a>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Address</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.address}}</td>
+            <td><a [routerLink]="['edituser', user.id]">Edit</a></td>
+            <td><button (click)="Delete(user.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
