@@ -8,7 +8,7 @@ import { NotfoundComponent } from './notfound.component';
 import { TutorialComponent } from './tutorial.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule }   from '@angular/router';
-
+import { DetailComponent }   from './detail.component';
 //import { appRoutes } from './app.routes';
 
 
@@ -19,6 +19,7 @@ import { RouterModule }   from '@angular/router';
     HomeComponent,
     Page1Component,
     Page2Component,
+    DetailComponent,
     NotfoundComponent
   ],
   imports: [
@@ -30,6 +31,7 @@ import { RouterModule }   from '@angular/router';
 	//{ path: '', redirectTo: 'page1', pathMatch:'full' },
 	{ path: 'page1', component: Page1Component },
 	{ path: 'page2', component: Page2Component },
+	{ path: 'detail/:id', component: DetailComponent },
 	{ path: '**', component: NotfoundComponent}
 	])
   ],

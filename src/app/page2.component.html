@@ -1,1 +1,45 @@
 <h2>Page 2</h2>
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Info</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Name1</td>
+			<td>Email1</td>
+			<td>
+				<a [routerLink]="['/detail', 1]"><button class="btn btn-info"><span class="glyphicon glyphicon-edit"></span></button></a>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Name2</td>
+			<td>Email2</td>
+			<td>
+				<a [routerLink]="['/detail', 2]"><button class="btn btn-info"><span class="glyphicon glyphicon-edit"></span></button></a>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Name3</td>
+			<td>Email3</td>
+			<td>
+				<a [routerLink]="['/detail', 3]"><button class="btn btn-info"><span class="glyphicon glyphicon-edit"></span></button></a>
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Name4</td>
+			<td>Email4</td>
+			<td>
+				<a [routerLink]="['/detail', 4]"><button class="btn btn-info"><span class="glyphicon glyphicon-edit"></span></button></a>
+			</td>
+		</tr>
+	</tbody>
+</table>
