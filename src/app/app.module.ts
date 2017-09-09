@@ -31,7 +31,9 @@
 
 // import { BrowserModule } from '@angular/platform-browser';
 // import { NgModule } from '@angular/core';
+// import { AppComponent } from './app.component';
 // import { TestComponent,} from './test.component';
+
 
 // @NgModule({
 //   declarations: [
@@ -82,9 +84,6 @@
 // import { HttpModule } from '@angular/http';
 //
 // import { AppComponent } from './app.component';
-// import { CardComponent } from './card/card.component';
-// import { CollapseGroupComponent } from './collapse-group/collapse-group.component';
-// import { CollapseComponent } from './collapse/collapse.component';
 // import { TempConverterPipe } from './pipes/temp-converter.pipe';
 // import { ContactFormComponent } from './contact-form/contact-form.component';
 // import { ContactReactiveFormComponent } from './contact-reactive-form/contact-reactive-form.component';
@@ -112,29 +111,48 @@
 // })
 // export class AppModule { }
 
-//////////////Fom Template//////////
+//////////////Fom Validation//////////
+// import { BrowserModule } from '@angular/platform-browser';
+// import { NgModule } from '@angular/core';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { HttpModule } from '@angular/http';
+//
+// import { AppComponent } from './app.component';
+// import { SignupTformComponent } from './signup-tform/signup-tform.component';
+// import { SignupRformComponent } from './signup-rform/signup-rform.component';
+// import { ForbiddenUsernameDirective } from './forbidden-username.directive';
+//
+// @NgModule({
+//   declarations: [
+//     AppComponent,
+//     SignupTformComponent,
+//     SignupRformComponent,
+//     ForbiddenUsernameDirective
+//   ],
+//   imports: [
+//     BrowserModule,
+//     FormsModule,
+//     ReactiveFormsModule,
+//     HttpModule
+//   ],
+//   providers: [],
+//   bootstrap: [AppComponent]
+// })
+// export class AppModule { }
+//////////////Structural-Directives//////////
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
-import { SignupTformComponent } from './signup-tform/signup-tform.component';
-import { SignupRformComponent } from './signup-rform/signup-rform.component';
-import { ForbiddenUsernameDirective } from './forbidden-username.directive';
+import { StructuralComponent, } from './structural-directives/structural.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SignupTformComponent,
-    SignupRformComponent,
-    ForbiddenUsernameDirective
+  declarations: [,
+      AppComponent,
+      StructuralComponent,
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
