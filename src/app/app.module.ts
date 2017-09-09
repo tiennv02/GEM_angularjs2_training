@@ -9,33 +9,43 @@ import { TutorialComponent } from './tutorial.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule }   from '@angular/router';
 import { DetailComponent }   from './detail.component';
+import { DetailPagelikeComponent }   from './detail-pagelike.component';
+import { DetailListfriendComponent }   from './detail-listfriend.component';
 //import { appRoutes } from './app.routes';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TutorialComponent,
-    HomeComponent,
-    Page1Component,
-    Page2Component,
-    DetailComponent,
-    NotfoundComponent
+  AppComponent,
+  TutorialComponent,
+  HomeComponent,
+  Page1Component,
+  Page2Component,
+  DetailComponent,
+  NotfoundComponent,
+  DetailPagelikeComponent,
+  DetailListfriendComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
+  BrowserModule,
+  FormsModule,
     //appRoutes
-    RouterModule.forRoot([
-	{ path: '', component: HomeComponent },
-	//{ path: '', redirectTo: 'page1', pathMatch:'full' },
-	{ path: 'page1', component: Page1Component },
-	{ path: 'page2', component: Page2Component },
-	{ path: 'detail/:id', component: DetailComponent },
-	{ path: '**', component: NotfoundComponent}
+  RouterModule.forRoot([
+    { path: '', component: HomeComponent },
+  	//{ path: '', redirectTo: 'page1', pathMatch:'full' },
+  	{ path: 'page1', component: Page1Component },
+  	{ path: 'page2', component: Page2Component },
+  	{ path: 'detail/:id', component: DetailComponent,
+      children:[
+        { path: 'pagelike', component: DetailPagelikeComponent },
+        { path: 'listfriend', component: DetailListfriendComponent },
+        //{ path: 'listfriend', loadChildren: 'DetailPagelikeComponent'}
+      ]
+    },
+    { path: '**', component: NotfoundComponent }
 	])
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
 export class AppModule { }

@@ -15,12 +15,12 @@ export class DetailComponent {
 			});
 	}
 
-	//ngOnInit(){
-	//	this.subscription = this.activatedRoute.params.subscribe(params=>{
-	//		this.id = params['id'];
-	//		//alert(this.id);
-	//		});
-	//}
+	ngOnInit(){
+		//this.subscription = this.activatedRoute.params.subscribe(params=>{
+		//	this.id = params['id'];
+		//	//alert(this.id);
+		//	});
+	}
 
 	//GotoDetail(){
 	//	this.router.navigate(['page2']);
