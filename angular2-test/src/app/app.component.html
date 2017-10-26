@@ -19,11 +19,20 @@
 <!--</ul>-->
 
 <div class="text-center" style="color: mediumvioletred;font-size: 25px;">Test Form Angular 2
- <p>
-  <test></test>
-</p>
-</div>
-<!-- 
+
+<!------------------pipes----------------->
+  <P style="color: lightseagreen;font-size: larger;"> PIPES</P>
+  <div><lowerupper-pipe></lowerupper-pipe></div>
+  <div><date-pipe></date-pipe></div>
+  <div><slice-list-pipe></slice-list-pipe></div>
+  <P style="color: lightseagreen;font-size: larger;">Sử dụng nhiều Pipe tuần tự – Chaining Pipe</P>
+  <div><date-pipe1></date-pipe1></div>
+  <P style="color: lightseagreen;font-size: larger;">Tạo một Custom Pipe</P>
+  <div>
+    Số mũ  của 2 : {{2| tempConverter:'2'}}
+  </div>
+
+  <!--------------------form ------------------->
   <!-- <p>Lấy đối tượng form từ $event</p>
 <div><key-up1></key-up1></div>
 
@@ -34,9 +43,10 @@
 <div><key-up3></key-up3></div> --> 
 
   <!-- <p>form add to list</p>
-  <div><add-list></add-list></div> --> 
+  <div><add-list></add-list></div> -->
 
 
+</div>
 
 
 
